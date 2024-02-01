@@ -30,7 +30,12 @@ h2 {
     letter-spacing: -1%;
     color: #333461;
 }
-
+h3{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 3%;
+    color: #041434;
+}
 p {
     font-size: 16px;
     font-weight: 400;
@@ -61,7 +66,7 @@ ul {
 /* style */
 /* navber */
 nav {
-    padding: 10px 0px;
+    padding: 20px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -170,6 +175,7 @@ nav ul :last-child a:hover {
 .Livelife {
     background: #FAF8F6;
     padding: 80px 0;
+    position: relative;
 }
 
 .Livelife .flex {
@@ -294,6 +300,92 @@ nav ul :last-child a:hover {
     font-weight: 800;
 }
 
+.vector_line {
+    position: absolute;
+    top: 70px;
+    left: 40px;
+}
+
+/* area section  */
+.area {
+    padding: 90px 0;
+}
+
+.area .flex {
+    gap: 6%;
+    align-items: start;
+}
+
+.area .flex_column {
+    width: 47%;
+}
+
+.area .flex_column p {
+    max-width: 470px;
+    font-size: 17px;
+    line-height: 25px;
+}
+.area :last-child{
+    justify-content: space-between;
+    gap: 2%;
+}
+.area :last-child .flex_column{
+    width: 32%;
+}
+
+ /* feedback section  */
+.feedback_section{
+    background: #FAF8F6;
+    padding: 100px 0;
+}
+ 
+ .feedback_section #slides_div p{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -3%;
+ }
+ .feedback_section #slides_div h4{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -3%;
+    color: #333461;
+ }
+.slider_parent{
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.slider{
+    display: flex;
+    gap: 25px;
+    overflow: hidden;
+}
+#slides_div{
+    width: 300px;
+    height: 300px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.icon {
+    width: 30px;
+    padding: 10px;
+    background: rgb(223, 221, 221);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.icon#right{
+    right: 0;
+}
+.icon#left{
+    display: none;
+}
+.scrollBehave{
+    scroll-behavior: smooth;
+}
+
 /* responsive design  */
 
 
@@ -345,17 +437,21 @@ nav ul :last-child a:hover {
         width: 100%;
 
     }
+
     .Livelife .right_column .success_rate {
         left: 0px;
         top: -51px;
     }
+
     .Livelife .left_column {
         width: 100%;
     }
+
     .Livelife .right_column .img {
         width: 100%;
         margin-bottom: 0;
     }
+
     h1 {
         font-size: 48px;
         line-height: 44px;
@@ -363,6 +459,7 @@ nav ul :last-child a:hover {
 }
 
 @media only screen and (max-width: 640px) {
+
     /* .container {
         max-width: 640px;
         margin: 0 auto;
