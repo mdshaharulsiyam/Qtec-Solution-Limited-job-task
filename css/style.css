@@ -362,9 +362,10 @@ nav ul :last-child a:hover {
 }
 #slides_div{
     width: 300px;
-    height: 300px;
+    height: 250px;
     flex-grow: 0;
     flex-shrink: 0;
+    background: white;
 }
 .icon {
     width: 30px;
@@ -384,6 +385,39 @@ nav ul :last-child a:hover {
 }
 .scrollBehave{
     scroll-behavior: smooth;
+}
+
+/* blog section  */
+.blog_section{
+    padding: 100px 0;
+}
+.blog_section .flex {
+    gap: 2%;
+}
+.blog_section .flex .flex_column{
+    width: 32%;
+    background: #EDEFF5;
+}
+.blog_section h2{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.blog_section .flex .flex_column h5{
+    color: #333461;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -3%;
+    padding-bottom: 10px;
+}
+.blog_section span{
+justify-content: center;
+align-items: center;
+padding-top: 60px;
+}
+.blog_section a{
+    padding: 10px 20px;;
 }
 
 /* responsive design  */
