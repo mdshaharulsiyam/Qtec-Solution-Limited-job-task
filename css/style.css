@@ -446,7 +446,8 @@ nav ul :last-child a:hover {
 
 /* free guide section  */
 .freeGuide_section {
-    margin: 20px auto;
+    margin: 70px auto;
+    margin-bottom: 100px;
 }
 
 .freeGuide_section .right_column {
@@ -476,6 +477,44 @@ nav ul :last-child a:hover {
     position: absolute;
     top: -50px;
     right: -30px;
+}
+
+/* online session section  */
+.onlineSession_section .flex {
+    gap: 2%;
+    background: #FAF8F6;
+    border-radius: 8px;
+}
+
+.onlineSession_section .flex_column {
+    width: 49%;
+    position: relative;
+}
+
+.onlineSession_section .flex_column a {
+    padding: 7px 60px;
+    margin-top: 30px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.onlineSession_section .flex_column .meet {
+    position: absolute;
+    background: white;
+    padding: 10px 20px;
+    left: 20px;
+    top: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #20AD96;
+}
+
+.onlineSession_section .flex_column .meet:hover {
+    color: #041434;
 }
 
 /* responsive design  */
