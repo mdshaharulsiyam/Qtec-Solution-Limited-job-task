@@ -493,7 +493,6 @@ nav ul :last-child a:hover {
 
 .onlineSession_section .flex_column a {
     padding: 7px 60px;
-    margin-top: 30px;
     display: inline-block;
     border-radius: 5px;
 }
@@ -517,6 +516,35 @@ nav ul :last-child a:hover {
     color: #041434;
 }
 
+.notified_section {
+    margin: 40px auto;
+    padding: 30px 0;
+    background: #FAF8F6;
+}
+.notified_section .flex {
+    gap: 2%;
+}
+.notified_section .flex .flex_column{
+    width: 49%;
+}
+.notified_section .flex .flex_column input{
+width: 70%;
+border-radius: 4px;
+background: white;
+border: 1px solid gray;
+padding: 10px;
+}
+.notified_section .flex .flex_column button{
+border-radius: 4px;
+background: #20AD96;
+color: white;
+padding: 11.5px 40px;
+border: none;
+cursor: pointer;
+}
+.notified_section .flex .flex_column button:hover{
+color: #041434;
+}
 /* responsive design  */
 
 

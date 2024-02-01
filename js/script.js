@@ -48,3 +48,6 @@ slider.addEventListener('mousemove',(e)=>{
     slider.classList.remove('scrollBehave');
     iconchacker()
 })
+const subscribe =()=>{
+    //
+}
