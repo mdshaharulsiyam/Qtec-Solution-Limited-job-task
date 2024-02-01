@@ -314,30 +314,27 @@ nav ul :last-child a:hover {
 }
 
 /* area section  */
-.area {
+.area ,footer{
     padding: 90px 0;
 }
-
 .area .flex {
     gap: 6%;
     align-items: start;
 }
-
 .area .flex_column {
     width: 47%;
 }
-
 .area .flex_column p {
     max-width: 470px;
     font-size: 17px;
     line-height: 25px;
 }
-
+footer .flex,
 .area :last-child {
     justify-content: space-between;
     gap: 2%;
 }
-
+footer .flex_column,
 .area :last-child .flex_column {
     width: 32%;
 }
@@ -544,6 +541,29 @@ cursor: pointer;
 }
 .notified_section .flex .flex_column button:hover{
 color: #041434;
+}
+
+/* footer  */
+footer .flex{
+    align-items: start;
+}
+footer h5{
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+footer p{
+    color: #4A556C80;
+    padding-top: 20px;
+}
+footer a{
+    background: none;
+    color: #4A556C80;
+    display: inline-block;
+    margin: 5px 0;
+    
+}
+footer a:hover{
+    color: #20AD96;
 }
 /* responsive design  */
 
