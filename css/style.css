@@ -30,12 +30,14 @@ h2 {
     letter-spacing: -1%;
     color: #333461;
 }
-h3{
+
+h3 {
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 3%;
     color: #041434;
 }
+
 p {
     font-size: 16px;
     font-weight: 400;
@@ -178,10 +180,12 @@ nav ul :last-child a:hover {
     position: relative;
 }
 
+.freeGuide_section .flex,
 .Livelife .flex {
     gap: 1%;
 }
 
+.freeGuide_section .left_column,
 .Livelife .left_column {
     width: 59%;
 }
@@ -193,16 +197,19 @@ nav ul :last-child a:hover {
     padding: 18px 0;
 }
 
+.freeGuide_section .left_column a,
 .Livelife .left_column a {
     padding: 10px 20px;
     border-radius: 6px;
     transition: .4s ease all;
 }
 
+.freeGuide_section .left_column a:hover,
 .Livelife .left_column a:hover {
     color: #333461;
 }
 
+.freeGuide_section .right_column,
 .Livelife .right_column {
     width: 40%;
     display: flex;
@@ -325,48 +332,55 @@ nav ul :last-child a:hover {
     font-size: 17px;
     line-height: 25px;
 }
-.area :last-child{
+
+.area :last-child {
     justify-content: space-between;
     gap: 2%;
 }
-.area :last-child .flex_column{
+
+.area :last-child .flex_column {
     width: 32%;
 }
 
- /* feedback section  */
-.feedback_section{
+/* feedback section  */
+.feedback_section {
     background: #FAF8F6;
     padding: 100px 0;
 }
- 
- .feedback_section #slides_div p{
+
+.feedback_section #slides_div p {
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -3%;
- }
- .feedback_section #slides_div h4{
+}
+
+.feedback_section #slides_div h4 {
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -3%;
     color: #333461;
- }
-.slider_parent{
+}
+
+.slider_parent {
     margin: 0 auto;
     overflow: hidden;
     position: relative;
 }
-.slider{
+
+.slider {
     display: flex;
     gap: 25px;
     overflow: hidden;
 }
-#slides_div{
+
+#slides_div {
     width: 300px;
     height: 250px;
     flex-grow: 0;
     flex-shrink: 0;
     background: white;
 }
+
 .icon {
     width: 30px;
     padding: 10px;
@@ -377,47 +391,91 @@ nav ul :last-child a:hover {
     transform: translateY(-50%);
     cursor: pointer;
 }
-.icon#right{
+
+.icon#right {
     right: 0;
 }
-.icon#left{
+
+.icon#left {
     display: none;
 }
-.scrollBehave{
+
+.scrollBehave {
     scroll-behavior: smooth;
 }
 
 /* blog section  */
-.blog_section{
+.blog_section {
     padding: 100px 0;
 }
+
 .blog_section .flex {
     gap: 2%;
 }
-.blog_section .flex .flex_column{
+
+.blog_section .flex .flex_column {
     width: 32%;
     background: #EDEFF5;
 }
-.blog_section h2{
+
+.blog_section h2 {
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
     padding-bottom: 50px;
 }
-.blog_section .flex .flex_column h5{
+
+.blog_section .flex .flex_column h5 {
     color: #333461;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -3%;
     padding-bottom: 10px;
 }
-.blog_section span{
-justify-content: center;
-align-items: center;
-padding-top: 60px;
+
+.blog_section span {
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
 }
-.blog_section a{
-    padding: 10px 20px;;
+
+.blog_section a {
+    padding: 10px 20px;
+    ;
+}
+
+/* free guide section  */
+.freeGuide_section {
+    margin: 20px auto;
+}
+
+.freeGuide_section .right_column {
+    background-image: url('/img/guide.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: block;
+    color: white;
+    position: relative;
+}
+
+.freeGuide_section .right_column div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    margin: 200px 0 30px 0;
+}
+
+.freeGuide_section .right_column .guide {
+    background: #20AD96;
+    padding: 40px 10px;
+    border-radius: 100%;
+    position: absolute;
+    top: -50px;
+    right: -30px;
 }
 
 /* responsive design  */
