@@ -348,6 +348,7 @@ footer .flex_column,
 .feedback_section {
     background: #FAF8F6;
     padding: 100px 0;
+    user-select: none;
 }
 
 .feedback_section #slides_div p {
