@@ -55,6 +55,7 @@ a {
 
 ul {
     list-style-type: none;
+    z-index: 20;
 }
 
 .flex {
@@ -177,12 +178,12 @@ nav ul :last-child a:hover {
 .Livelife {
     background: #FAF8F6;
     padding: 80px 0;
-    position: relative;
 }
 
 .freeGuide_section .flex,
 .Livelife .flex {
     gap: 1%;
+    position: relative;
 }
 
 .freeGuide_section .left_column,
@@ -309,8 +310,8 @@ nav ul :last-child a:hover {
 
 .vector_line {
     position: absolute;
-    top: 70px;
-    left: 40px;
+    top: 0px;
+    left: -30px;
 }
 
 /* area section  */
@@ -320,6 +321,10 @@ nav ul :last-child a:hover {
 .area .flex {
     gap: 6%;
     align-items: start;
+    position: relative;
+}
+.area .flex .vector_line{
+   top: -40px;
 }
 .area .flex_column {
     width: 47%;
@@ -359,6 +364,7 @@ footer .flex_column,
 }
 
 .slider_parent {
+    width: 94%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -493,7 +499,9 @@ footer .flex_column,
     display: inline-block;
     border-radius: 5px;
 }
-
+.onlineSession_section .flex_column p{
+    font-size: 24px;
+}
 .onlineSession_section .flex_column .meet {
     position: absolute;
     background: white;
@@ -567,12 +575,61 @@ footer a:hover{
 }
 /* responsive design  */
 
+@media only screen and (max-width: 1920px) {
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .onlineSession_section .flex_column .meet {
+        left: 20px;
+        top: 20px;
+    }
+}
+@media only screen and (max-width: 1536px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
 
-@media only screen and (max-width: 1536px) {}
+@media only screen and (max-width: 1280px) {
+    .container {
+        max-width: 1040px;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .notified_section .flex .flex_column input {
+        width: 60%;
+    }
+}
 
-@media only screen and (max-width: 1280px) {}
-
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 1024px) {
+    .container {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+    .onlineSession_section .flex h2{
+        padding-left: 40px;
+    }
+    .onlineSession_section .flex a{
+        margin-left: 40px;
+    }
+    .onlineSession_section .flex p{
+        padding-left: 40px;
+        font-size: 24px;
+    }
+    .onlineSession_section .flex_column .meet {
+        left: -30px;
+        top: 9px;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     nav ul {
@@ -588,6 +645,8 @@ footer a:hover{
         width: 0px;
         overflow: hidden;
         height: 0;
+        background: #041434;
+        padding-right: 10px;
     }
 
     nav ul.show {
@@ -607,7 +666,9 @@ footer a:hover{
         max-width: 640px;
         margin: 0 auto;
     }
-
+    .Livelife {
+        padding: 30px 0;
+    }
     .Livelife .flex {
         flex-direction: column-reverse;
     }
@@ -618,7 +679,7 @@ footer a:hover{
     }
 
     .Livelife .right_column .success_rate {
-        left: 0px;
+        left: -24px;
         top: -51px;
     }
 
@@ -635,16 +696,115 @@ footer a:hover{
         font-size: 48px;
         line-height: 44px;
     }
+    .area, footer {
+        padding: 30px 0;
+    }
+    .area .flex_column {
+        width: 100%;
+    }
+    h2 {
+        font-size: 34px;
+    }
+    .area .flex_column p {
+        max-width: 100%;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    footer .flex_column, .area :last-child .flex_column {
+        width: 49%;
+    }
+    .feedback_section {
+        padding: 30px 0;
+    }
+    .blog_section {
+        padding: 30px 0;
+    }
+    .blog_section .flex {
+        row-gap: 10px;
+        column-gap: 2%;
+    }
+    .blog_section .flex .flex_column {
+        width: 49%;
+    }
+    .freeGuide_section .flex, .Livelife .flex {
+        gap: 2%;
+        flex-direction: column-reverse;
+    }
+    .freeGuide_section .left_column, .Livelife .left_column {
+        width: 100%;
+    }
+    .freeGuide_section .right_column, .Livelife .right_column {
+        width: 100%;
+    }
+    .onlineSession_section .flex {
+        flex-direction: column-reverse;
+    }
+    .onlineSession_section .flex_column {
+        width: 100%;
+    }
+    .onlineSession_section .flex_column .meet {
+        left: -22px;
+        top: 20px;
+        
+    }
+    .notified_section .flex {
+        gap: 22px;
+    }
+    .notified_section .flex .flex_column {
+        width: 100%;
+    }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 426px) {
 
-    /* .container {
-        max-width: 640px;
+    .container {
+        max-width: 310px;
         margin: 0 auto;
-    } */
+    }
+    .onlineSession_section .flex_column .meet {
+        left: -34px;
+        top: 5px;
+    }
     h1 {
         font-size: 32px;
         line-height: 32px;
+    }
+    footer .flex_column, .area :last-child .flex_column {
+        width: 100%;
+    }
+    .blog_section .flex .flex_column {
+        width: 100%;
+        background: #EDEFF5;
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    h3 {
+        font-size: 16px;
+        line-height: 18px;;
+    }
+    .onlineSession_section .flex_column p{
+        font-size: 17px;
+    }
+    .feedback_section #slides_div p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .feedback_section #slides_div h4 {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .notified_section .flex .flex_column button {
+        padding: 11.5px 22px;
+    }
+    .notified_section .flex .flex_column input {
+        width: 50%;
+    }
+
+}
+@media only screen and (max-width: 321px) {
+    .freeGuide_section .right_column .guide {
+        right: -8px;
     }
 }
